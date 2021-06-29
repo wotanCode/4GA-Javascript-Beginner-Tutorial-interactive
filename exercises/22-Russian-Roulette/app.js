@@ -6,9 +6,12 @@ const spinChamber = () => {
 };
 
 // Remove the // below and complete the commented lines
-const fireGun = (spinnerPosition) => {
-    //if (...) return ("You're dead!");
-    //else return ("Keep playing!");
+const fireGun = (spinChamberPosition) => {
+    if (spinChamberPosition==bulletPosition){
+        return "You're dead!";
+    } else {
+        return "Keep playing!";
+    }
 };
-
-//console.log(fireGun(...));
+fireGun(spinChamber());
+//Este ejercicio no pasa el test unitario investigar por que.
